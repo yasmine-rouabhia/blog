@@ -22,7 +22,7 @@ class DROITS
     public $user;
 
 // Méthode pour se connectez a la BDD 
-    public function __constuct()
+    public function __constuct($bdd)
     {
         $this->bdd = $bdd;
         $this->bdd = new PDO('mysql:host=localhost;dbname=blog;charset=utf8', 'root', '');
@@ -68,7 +68,7 @@ class DROITS
 }
 
 
-//$droit = new Droit();
+
 // $droit->Update();
 // $droit->Creation_Articles();
 
